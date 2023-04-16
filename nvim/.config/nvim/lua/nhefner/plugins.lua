@@ -35,10 +35,6 @@ require('packer').startup(function()
         ts_update()
     end,
   }
-  use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
   use 'Mofiqul/dracula.nvim'
   use 'vim-airline/vim-airline'
 end)
