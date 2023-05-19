@@ -89,3 +89,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export PATH=$PATH:/opt/gradle/gradle-8.1.1/bin
