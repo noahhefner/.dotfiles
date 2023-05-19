@@ -10,5 +10,5 @@ fi
 apt install stow
 
 # Stow
-stow --adopt bash
-stow --adopt nvim
+stow bash
+stow nvim
