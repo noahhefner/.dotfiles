@@ -25,6 +25,8 @@ keymap("n", "<C-t>", ":terminal<CR>", opts)
 -- NvimTree
 keymap("n", "<leader>f", ":NvimTreeToggle<CR>", opts)
 
--- Barbar
-keymap('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
-keymap('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
+-- Telescope
+keymap('n', '<leader>ff', builtin.find_files, {})
+keymap('n', '<leader>fg', builtin.live_grep, {})
+keymap('n', '<leader>fb', builtin.buffers, {})
+keymap('n', '<leader>fh', builtin.help_tags, {})

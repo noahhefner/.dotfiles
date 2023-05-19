@@ -8,13 +8,13 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 vim.opt.colorcolumn = "80"
-vim.opt.number = true      -- enable line numbers
+vim.opt.number = true          -- enable line numbers
 vim.opt.relativenumber = true  -- relative line numbers
-vim.opt.list = true        -- show invisible characters
-vim.opt.mouse = "nv"       -- enable mouse for normal and visual modes
-vim.opt.scrolloff = 8     -- lines of context
-vim.opt.splitbelow = true  -- put new windows below current
-vim.opt.splitright = true  -- put new vertical splits to right
+vim.opt.list = true            -- show invisible characters
+vim.opt.mouse = "nv"           -- enable mouse for normal and visual modes
+vim.opt.scrolloff = 8          -- lines of context
+vim.opt.splitbelow = true      -- put new windows below current
+vim.opt.splitright = true      -- put new vertical splits to right
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
@@ -30,9 +30,16 @@ require("nvim-treesitter.configs").setup({
   }
 })
 
+-- keymaps for telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- dracula customizations
 local dracula = require("dracula")
 dracula.setup({
-  -- customize dracula color palette
   colors = {
     bg = "#282A36",
     fg = "#F8F8F2",
@@ -66,13 +73,8 @@ dracula.setup({
   -- set italic comment
   italic_comment = true, -- default false
   -- overrides the default highlights see `:h synIDattr`
-  overrides = {
-    -- Examples
-    -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
-    -- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
-    -- Nothing = {} -- clear highlight of Nothing
-  },
+  overrides = { },
 })
 
--- dracula colorscheme
+-- set dracula colorscheme
 vim.cmd[[colorscheme dracula]]
