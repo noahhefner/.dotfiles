@@ -17,17 +17,14 @@ vim.api.nvim_exec(
   false
 )
 
--- Here we can declare the plugins we'll be using.
 local use = require('packer').use
 require('packer').startup(function()
-  use 'wbthomason/packer.nvim'
+  use { 'wbthomason/packer.nvim' }
+  use { 'nvim-tree/nvim-web-devicons' } 
+  use { 'catppuccin/nvim', as = 'catppuccin' }
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-  use {
-    'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons', -- for file icons
-    }
-  }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-tree/nvim-tree.lua' }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
@@ -35,6 +32,11 @@ require('packer').startup(function()
         ts_update()
     end,
   }
-  use 'Mofiqul/dracula.nvim'
   use 'vim-airline/vim-airline'
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+  }
 end)
