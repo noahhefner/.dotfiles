@@ -22,7 +22,13 @@ vim.opt.autoindent = true
 vim.opt.expandtab = true
 
 -- nvim-tree
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 400,
+  }
+})
 
 -- treesitter
 require("nvim-treesitter.configs").setup({

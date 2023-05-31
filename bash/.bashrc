@@ -2,6 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Java
+JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME
+export PATH=$PATH:$JAVA_HOME
+
+# Gradle
+export PATH=$PATH:/opt/gradle/gradle-8.1.1/bin
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
