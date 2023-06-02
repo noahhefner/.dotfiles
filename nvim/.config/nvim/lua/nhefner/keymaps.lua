@@ -16,10 +16,10 @@ keymap("n", "<C-j>", "<C-w>k", opts)
 keymap("n", "<C-k>", "<C-w>j", opts)
 
 -- Resize windows with arrow keys
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<A-Up>", ":resize -2<CR>", opts)
+keymap("n", "<A-Down>", ":resize +2<CR>", opts)
+keymap("n", "<A-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<A-Right>", ":vertical resize -2<CR>", opts)
 
 -- Open terminal
 keymap("n", "<C-t>", ":terminal<CR>", opts)

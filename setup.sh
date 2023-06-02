@@ -12,3 +12,4 @@ apt install stow
 # Stow
 stow bash
 stow nvim
+stow kitty
