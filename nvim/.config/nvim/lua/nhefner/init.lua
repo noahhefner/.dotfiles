@@ -23,6 +23,7 @@ vim.opt.expandtab = true
 
 -- nvim-tree
 require("nvim-tree").setup({
+  -- show git folders
   git = {
     enable = true,
     ignore = false,
@@ -30,19 +31,18 @@ require("nvim-tree").setup({
   }
 })
 
--- treesitter
+-- Treesitter
 require("nvim-treesitter.configs").setup({
   highlight = {
     enable = true
   }
 })
 
--- telescope fuzzy file finder (fzf)
--- You dont need to set any of these options. These are the default ones. Only
--- the loading is important
+-- Telescope
 require('telescope').setup {
   pickers = {
     find_files = {
+      -- show hidden files
       hidden = "true"
     }
   },
@@ -52,15 +52,12 @@ require('telescope').setup {
       override_generic_sorter = true,  -- override the generic sorter
       override_file_sorter = true,     -- override the file sorter
       case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-                                       -- the default case_mode is "smart_case"
     }
   }
 }
--- To get fzf loaded and working with telescope, you need to call
--- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
 
--- catppuccin color theme
+-- Catppuccin color theme
 require("catppuccin").setup({
     flavour = "macchiato", -- latte, frappe, macchiato, mocha
     background = { -- :h background
@@ -103,14 +100,13 @@ require("catppuccin").setup({
         mini = false,
     },
 })
-
--- setup must be called before loading
 vim.cmd.colorscheme "catppuccin"
 
--- barbar
-vim.g.barbar_auto_setup = false -- disable auto-setup
+-- Barbar
+vim.g.barbar_auto_setup = false
 require'barbar'.setup {
   sidebar_filetypes = {
+    -- offset the tabs because of nvim tree
     NvimTree = true,
   }
 }
