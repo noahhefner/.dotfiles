@@ -34,7 +34,6 @@ require('packer').startup(function()
         ts_update()
     end,
   }
-  use 'vim-airline/vim-airline'
   use {
     'goolord/alpha-nvim',
     config = function ()

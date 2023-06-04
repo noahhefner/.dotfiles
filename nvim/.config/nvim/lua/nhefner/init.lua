@@ -21,6 +21,11 @@ vim.opt.shiftwidth = 2
 vim.opt.autoindent = true
 vim.opt.expandtab = true
 
+-- hide bottom bars
+vim.opt.laststatus = 0
+vim.opt.ruler = false
+vim.opt.showcmd = false
+
 -- nvim-tree
 require("nvim-tree").setup({
   -- show git folders

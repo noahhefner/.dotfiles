@@ -6,6 +6,10 @@ local opts = { noremap = true, silent = true }
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
+-- save / quit
+keymap("n", "<leader>s", ":w<CR>", opts)
+keymap("n", "<leader>ss", ":wq<CR>", opts)
+
 -- Windows
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
