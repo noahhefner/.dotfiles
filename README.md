@@ -1,14 +1,21 @@
 # Usage
 
-## 1. Install `stow`
+## 1. Build Neovim and Ranger from source
+
+Ranger instructions [here](https://github.com/ranger/ranger) and Neovim instructions [here](https://github.com/neovim/neovim/wiki/Building-Neovim).
+
+## 2. Install `stow`
 
 `sudo apt install stow`
 
-## 2. Symlink configuration files
+## 3. Symlink configuration files
 
-Bash: `stow bash`
-Neovim: `stow nvim`
-Kitty Terminal: `stow kitty`
+```
+stow bash
+stow nvim
+stow kitty
+stow ranger
+```
 
 # Keybindings
 

@@ -22,6 +22,7 @@ require('packer').startup(function()
   use { 'wbthomason/packer.nvim' }
   use { 'nvim-tree/nvim-web-devicons' } 
   use { 'lewis6991/gitsigns.nvim' }
+  use { 'fladson/vim-kitty' }
   use { 'romgrk/barbar.nvim' }
   use { 'catppuccin/nvim', as = 'catppuccin' }
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
