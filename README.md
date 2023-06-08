@@ -25,10 +25,13 @@ stow ranger
 |-------------------------------|---------------------|
 | New Tab                       | `ctrl+shift+t`      |
 | Close Tab                     | `ctrl+shift+q`      |
-| New Kitty Window              | `ctrl+shift+enter`  |
+| Move to tab to the right      | `ctrl+shift+right`  |
+| Move to tab to the left       | `ctrl+shift+left`   |
+| New Kitty Window Horizontal   | `ctrl+shift+enter`  |
 | Close Kitty Window            | `ctrl+shift+w`      |
 | Move To Next Kitty Window     | `ctrl+shift+]`      |
 | Move To Previous Kitty Window | `ctrl+shift+[`      |
+| Open Ranger in new tab        | `ctrl+r`            |
 
 ## Neovim
 
@@ -55,12 +58,10 @@ stow ranger
 
 ### Telescope
 
-| Action     | Keybinding  |
-|------------|-------------|
-| Find files | `space ff`  |
-| Live grep  | `space fg`  |
-| Buffers    | `space fb`  |
-| Help tags  | `space fh`  |
+| Action               | Keybinding  |
+|----------------------|-------------|
+| Find file            | `space ff`  |
+| Find in current file | `space fg`  |
 
 ### Barbar
 
@@ -69,3 +70,15 @@ stow ranger
 | Move to previous buffer | `space ,`  |
 | Move to next buffer     | `space .`  |
 | Close current buffer    | `space c`  |
+
+## Ranger
+
+Ranger keybindings mimic Neovim for the most part. `h j k` and `l` can be used for navigation.
+
+| Action                   | Keybinding |
+|--------------------------|------------|
+| Select one or more files | `space`    |
+| Copy                     | `y`        |
+| Paste                    | `p`        |
+| Delete                   | `d`        |
+| Undo                     | `u'        |
