@@ -81,4 +81,4 @@ Ranger keybindings mimic Neovim for the most part. `h j k` and `l` can be used f
 | Copy                     | `y`        |
 | Paste                    | `p`        |
 | Delete                   | `d`        |
-| Undo                     | `u'        |
+| Undo                     | `u`        |
