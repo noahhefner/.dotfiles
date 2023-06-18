@@ -7,7 +7,7 @@
     
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "keyboard-state", "network"],
+    "modules-right": ["pulseaudio", "keyboard-state", "network", "custom/power"],
     
     "keyboard-state": {
         "capslock": true,
@@ -64,4 +64,9 @@
         },
         "on-click": "pavucontrol"
     },
+
+    "custom/power": { 
+      "format":"", 
+      "on-click":"swaynag -t power-options -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Suspend' 'swaymsg exec systemctl suspend' -b 'Shutdown' 'systemctl shutdown'" 
+    }
 }
