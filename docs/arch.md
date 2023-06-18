@@ -19,18 +19,16 @@
 - run `archinstall` to run arch install script 
 - select options you want
 - create user and add to sudoers
-- additional packages, do `sudo git neofetch`
+- additional packages, do `sudo`
 
 ### Packages
 
-- `lightdm` - display manager
-- `i3` (group, install all) - tiling window manager
-- `dmenu` - for launching apps in i3
-- `feh` - wallpaper utility
-- `kitty` - tty
-- `flatpak` - for applications, use `xdg-desktop-portal-gtk`
+`inotify-tools sway swaybg swaylock swayidle mako unzip ly neovim curl stow ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
 
-- other packages to install: `git neofetch wget openssh stow tree`
+- For `flatpak`, use `xdg-desktop-portal-wlr`
 
-- cant figure out how to setup kitty properly on first install
-- user terminator for initial install, then install kitty, set kitty as default terminal, uninstall terminator
+#### AUR
+
+- Use `yay` for AUR packages
+
+`yofi-git wlr-randr-git`

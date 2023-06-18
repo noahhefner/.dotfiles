@@ -1,0 +1,46 @@
+* {
+    border: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+tooltip {
+    background: rgba(43, 48, 59, 0.5);
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+    color: white;
+}
+
+#workspaces button {
+    margin: 6px 3px 6px 3px;
+    padding: 0 5px;
+    border-radius: 16px;
+    background: rgba(43, 48, 59, 0.5);
+    color: white;
+}
+
+#workspaces button.focused {
+    background: rgba(86, 96, 118, 1);
+}
+
+#mode, #clock, #pulseaudio, #network, #keyboard-state {
+    padding: 0 12px;
+    background: rgba(43, 48, 59, 0.5);
+    border-radius: 16px;
+    margin: 6px 3px 6px 3px;
+}
+
+#mode {
+    background: rgba(86, 96, 118, 1);
+    color: white;
+}
+
+#clock {
+}
