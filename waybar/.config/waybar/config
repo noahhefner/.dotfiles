@@ -67,6 +67,6 @@
 
     "custom/power": { 
       "format":"", 
-      "on-click":"swaynag -t power-options -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Suspend' 'swaymsg exec systemctl suspend' -b 'Shutdown' 'systemctl poweroff'" 
+      "on-click":"swaynag -t power-options -m 'Power Menu Options' -b 'Reboot' 'swaymsg exec systemctl reboot' -b 'Shutdown' 'swaymsg exec systemctl poweroff' -b 'Logout' 'swaymsg exit' -b 'Suspend' 'swaymsg exec systemctl suspend'" 
     }
 }

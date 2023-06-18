@@ -23,7 +23,7 @@
 
 ### Packages
 
-`sway xorg-xwayland swaybg swaylock swayidle mako unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
+`sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
 
 | Package       | Reason for Install       |
 |---------------|--------------------------|
@@ -48,6 +48,7 @@
 | man           | Manuals
 | man-pages     | Manual pages
 | xorg-xwayland | Xorg server
+| pavucontrol   | Audio manager
 
 - For `flatpak`, use `xdg-desktop-portal-wlr`
 
