@@ -23,7 +23,31 @@
 
 ### Packages
 
-`inotify-tools sway swaybg swaylock swayidle mako unzip ly neovim curl stow ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
+`sway xorg-xwayland swaybg swaylock swayidle mako unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
+
+| Package       | Reason for Install       |
+|---------------|--------------------------|
+| sway          | Wayland compositor       
+| swaybg        | Desktop background
+| swaylock      | Lock screen
+| swayidle      | Idle screen
+| mako          | Notification daemon
+| unzip         | File unzipper
+| ly            | TUI display manager
+| neovim        | Text editor
+| curl          | Transfer a URL
+| stow          | Symlink to config files
+| ranger        | TUI file manager
+| kitty         | Terminal emulator
+| flatpak       | Installing apps
+| git           | Source control
+| neofetch      | To gloat
+| wget          | Network downloader
+| openssh       | Needed for ssh-keygen
+| tree          | Directory structure
+| man           | Manuals
+| man-pages     | Manual pages
+| xorg-xwayland | Xorg server
 
 - For `flatpak`, use `xdg-desktop-portal-wlr`
 
@@ -31,4 +55,8 @@
 
 - Use `yay` for AUR packages
 
-`yofi-git wlr-randr-git`
+`yofi-git`
+
+### Post Install
+
+- make sure to run the `install_icons.sh` script as root. Yofi expects the icons to be installed to `/usr/share/icons` and thats where the Qogir install script puts them.

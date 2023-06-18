@@ -1,0 +1,11 @@
+font="JetBrains Medium Nerd Font Complete" 12
+text-color=#cad3f5ff
+background-color=#545879ff
+width=400
+height=400
+border-color=#b7bdf8ff
+border-radius=16
+icons=1
+icon-path=/usr/share/icons/Qogir
+anchor=top-left
+group-by=app-name
