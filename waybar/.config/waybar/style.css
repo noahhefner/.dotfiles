@@ -1,49 +1,47 @@
-/*
-
-Catppuccin Macchiato Colors:
-
-text - rgba(202, 211, 245, 255)
-surface0 - r
-
-*/
-
+/* 
+ * Waybar styles
+ *
+ * Uses Catppuccin Macchiato color scheme.
+ *
+ * https://github.com/catppuccin/catppuccin
+ */
 
 * {
     border: none;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     min-height: 0;
-    color: rgba(202, 211, 245, 1);
+    color: rgba(202, 211, 245, 1);                                   /* Text */
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);                           /* No background */
     color: white;
 }
 
 tooltip {
-    background: rgba(54, 58, 79, 1); /* Surface0 */
-    border: 1px solid rgba(100, 114, 125, 0.5);
+    background: rgba(54, 58, 79, 1);                             /* Surface0 */
+    border: 1px solid rgba(183, 189, 248, 1);                    /* Lavender */
 }
 
 #workspaces button {
     margin: 6px 3px 6px 3px;
     padding: 0 5px;
     border-radius: 16px;
-    background: rgba(54, 58, 79, 1); /* Surface0 */
+    background: rgba(54, 58, 79, 1);                             /* Surface0 */
 }
 
 #workspaces button.focused {
-    background: rgba(128, 135, 162, 1); /* Overlay1 */  
+    background: rgba(128, 135, 162, 1);                          /* Overlay1 */
 }
 
 #mode, #clock, #pulseaudio, #network, #keyboard-state, #custom-power {
     padding: 0 12px;
-    background: rgba(54, 58, 79, 1); /* Surface0 */
+    background: rgba(54, 58, 79, 1);                             /* Surface0 */
     border-radius: 16px;
     margin: 6px 3px 6px 3px;
 }
 
 #mode {
-    background: rgba(86, 96, 118, 1);
+    background: rgba(54, 58, 79, 1);                            /* Surface 0 */
 }

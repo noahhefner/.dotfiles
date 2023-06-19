@@ -1,23 +1,38 @@
 # Usage
 
-## 1. Build Neovim and Ranger from source
+Assumptions:
 
-Ranger instructions [here](https://github.com/ranger/ranger) and Neovim instructions [here](https://github.com/neovim/neovim/wiki/Building-Neovim).
+- Base system is Arch.
+- This repo has been cloned to `/home/$USER/.dotfiles`.
 
-## 2. Install `stow`
-
-`sudo apt install stow`
-
-## 3. Symlink configuration files
+Run these commands from the `.dotfiles` directory.
 
 ```
 stow bash
 stow nvim
 stow kitty
 stow ranger
+stow sway
+stow swaynag
+stow waybar
+stow yofi
+sudo stow ly --target=/
 ```
 
 # Keybindings
+
+## Sway
+
+Another way to move windows is to hold `super` and click / drag with the mouse.
+
+| Action                           | Keybinding             |
+|----------------------------------|------------------------|
+| Open terminal                    | `ctrl+enter`           |
+| Open Yofi                        | `super+d`              |
+| Swap to workspace 1/2/3...       | `super+1|2|3...`       |
+| Move window to workspace 1/2/3...| `super+shift+1/2/3...` |
+| Close active window              | `super+q`              |
+| Make active window fullscreen    | `super+f`              |
 
 ## Kitty
 
@@ -41,7 +56,7 @@ stow ranger
 
 | Action                          | Keybinding   |
 |---------------------------------|--------------|
-| Move to left window             | `ctrl+h`     |        
+| Move to left window             | `ctrl+h`     |
 | Move to right window            | `ctrl+l`     |
 | Move to lower window            | `ctrl+j`     |
 | Move to upper window            | `ctrl+k`     |
@@ -78,7 +93,7 @@ Ranger keybindings mimic Neovim for the most part. `h j k` and `l` can be used f
 | Action                   | Keybinding |
 |--------------------------|------------|
 | Select one or more files | `space`    |
-| Copy                     | `y`        |
-| Paste                    | `p`        |
+| Copy                     | `yy`       |
+| Paste                    | `pp`       |
 | Delete                   | `d`        |
 | Undo                     | `u`        |
