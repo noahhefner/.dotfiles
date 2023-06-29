@@ -2,10 +2,13 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Tell Ranger to use Neovim instead of Vim
+export EDITOR=nvim
+
 # Java
-JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-export JAVA_HOME
-export PATH=$PATH:$JAVA_HOME
+#JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+#export JAVA_HOME
+#export PATH=$PATH:$JAVA_HOME
 
 # Gradle
 export PATH=$PATH:/opt/gradle/gradle-8.1.1/bin
