@@ -32,7 +32,7 @@ Another way to move windows is to hold `super` and click / drag with the mouse.
 |----------------------------------|------------------------|
 | Open terminal                    | `ctrl+enter`           |
 | Open Yofi                        | `super+d`              |
-| Swap to workspace 1/2/3...       | `super+1|2|3...`       |
+| Swap to workspace 1/2/3...       | `super+1/2/3...`       |
 | Move window to workspace 1/2/3...| `super+shift+1/2/3...` |
 | Close active window              | `super+q`              |
 | Make active window fullscreen    | `super+f`              |
