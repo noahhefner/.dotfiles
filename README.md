@@ -1,11 +1,14 @@
+# Disclaimer
+
+This repository is a constant work in progress. I was using Arch when I started this project, but I have since switched to NixOS and some of the configs may not work.
+
 # Usage
 
 Assumptions:
 
-- Base system is Arch.
 - This repo has been cloned to `/home/$USER/.dotfiles`.
 
-Run these commands from the `.dotfiles` directory.
+Run these commands from `/home/$USER/.dotfiles`.
 
 ```
 stow bash
