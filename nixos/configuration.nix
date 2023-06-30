@@ -109,9 +109,7 @@ in
 
   environment.etc."greetd/environments".text = ''
     sway
-    fish
     bash
-    startxfce4
   '';
 
   programs.sway = {
@@ -123,35 +121,37 @@ in
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     alacritty
-      dbus-sway-environment
-      configure-gtk
-      wayland
-      xdg-utils # For opening default programs when clicking links
-      glib # gsettings
-      gnome3.adwaita-icon-theme
-      swaylock
-      swayidle
-      wl-clipboard
-      bemenu
-      mako
-      wdisplays
-      git
-      tree
+    waybar
+    dbus-sway-environment
+    configure-gtk
+    wayland
+    xdg-utils                  # For opening default programs when clicking links
+    glib                       # gsettings
+    gnome3.adwaita-icon-theme
+    swaylock
+    swayidle
+    wl-clipboard
+    wmenu
+    mako
+    wdisplays
+    libgccjit
+    gnumake
+    git
+    tree
     curl
     wget
-   swaybg
-   unzip
-   neovim
-   stow
-   ranger
-   kitty
-   git
-   neofetch
-   openssh
-   man
-   man-pages
-   pavucontrol
-   brave
+    swaybg
+    unzip
+    stow
+    ranger
+    kitty
+    git
+    neofetch
+    openssh
+    man
+    man-pages
+    pavucontrol
+    brave
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
