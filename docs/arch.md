@@ -23,7 +23,7 @@
 
 ### Packages
 
-`sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
+`wdisplays libgccjit xdg-utils sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
 
 | Package       | Reason for Install       |
 |---------------|--------------------------|
@@ -49,6 +49,10 @@
 | man-pages     | Manual pages
 | xorg-xwayland | Xorg server
 | pavucontrol   | Audio manager
+| xdg-utils     | Default programs
+| wl-clipboard  | Wayland clipboard
+| wdisplays     | GUI Display configurator
+| libgccjit     | gcc
 
 - For `flatpak`, use `xdg-desktop-portal-wlr`
 
@@ -56,8 +60,15 @@
 
 - Use `yay` for AUR packages
 
-`yofi-git`
+`yofi-git brave-bin`
+
+| Package     | Reason for Install |
+|-------------|--------------------|
+| yofi-git    | App launcher
+| brave-bin   | Web browser
 
 ### Post Install
 
 - make sure to run the `install_icons.sh` script as root. Yofi expects the icons to be installed to `/usr/share/icons` and thats where the Qogir install script puts them.
+- install fonts (TODO: Modify the font install script to work like the icon install script to have root and user options.)
+- set wallpaper (TODO: Write a script for this)
