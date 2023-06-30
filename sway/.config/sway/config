@@ -4,7 +4,7 @@
 set $mod Mod4
 
 # Set display mode for Acer Predator
-output DP-1 resolution 1920x1080 position 1920,0
+output DP-1 resolution 1920x1080@60Hz position 1920,0
 
 # Remove header and keep only 2px border
 default_border pixel 2
@@ -33,7 +33,9 @@ set $term kitty
 bindsym $mod+Return exec $term
 
 # Start Yofi application launcher
-bindsym $mod+d exec yofi
+#bindsym $mod+d exec bemenu
+set $menu dmenu_path | wmenu | xargs swaymsg exec --
+bindsym $mod+d exec $menu
 
 # Kill focused window
 bindsym $mod+q kill
@@ -141,8 +143,7 @@ bar {
 }
 
 # Window gaps
-# gaps inner 10px
-# gaps top 0px
+gaps inner 10px
 
 # Colors (Catppuccin Macchiato)
 set $rosewater #f4dbd6
@@ -170,6 +171,7 @@ set $surface0  #363a4f
 set $base      #24273a
 set $mantle    #1e2030
 set $crust     #181926
+
 # class                  border    bgr.  text   indicator  child_border
 client.focused           $pink     $base $text  $rosewater $pink
 client.focused_inactive  $mauve    $base $text  $rosewater $mauve
