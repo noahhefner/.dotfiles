@@ -36,11 +36,11 @@ tooltip {
 }
 
 #mode, #clock, #pulseaudio, #network, #keyboard-state, #custom-power {
-    padding: 0 12px;
+    padding: 0px 12px;
     background: rgba(54, 58, 79, 1);                             /* Surface0 */
     border-radius: 16px;
-    margin: 6px 3px 6px 3px;
-}
+    margin: 8px 3px 0px 3px;                                     /* top margin value (8px) should match inner gaps value in sway config */
+}                                   
 
 #mode {
     background: rgba(54, 58, 79, 1);                            /* Surface 0 */
