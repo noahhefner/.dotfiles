@@ -11,7 +11,7 @@ set $mod Mod4
 output DP-1 resolution 1920x1080@60Hz position 1920,0
 
 # Remove header and keep only 2px border
-default_border pixel 2
+default_border pixel 4
 
 # Mako notification daemon
 exec mako
@@ -137,7 +137,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Background
-exec_always swaybg --mode fill --image /home/$USER/Photos/yosemite.jpg
+exec_always swaybg --mode fill --image /home/nhefner/Photos/river.jpg
 
 # Waybar
 bar {
@@ -177,9 +177,9 @@ set $mantle    #1e2030
 set $crust     #181926
 
 # class                  border    bgr.  text   indicator  child_border
-client.focused           $lavender $base $text  $rosewater $pink
-client.focused_inactive  $mauve    $base $text  $rosewater $mauve
-client.unfocused         $surface0 $base $text  $rosewater $mauve
+client.focused           $text     $base $text  $text      $text
+client.focused_inactive  $crust    $base $text  $rosewater $crust
+client.unfocused         $crust $base $text  $rosewater $crust
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base

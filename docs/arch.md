@@ -23,36 +23,37 @@
 
 ### Packages
 
-`libgccjit base-devel xdg-utils sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
+`spotify-launcher libgccjit base-devel xdg-utils sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
 
-| Package       | Reason for Install       |
-|---------------|--------------------------|
-| sway          | Wayland compositor       
-| swaybg        | Desktop background
-| swaylock      | Lock screen
-| swayidle      | Idle screen
-| mako          | Notification daemon
-| unzip         | File unzipper
-| ly            | TUI display manager
-| neovim        | Text editor
-| curl          | Transfer a URL
-| stow          | Symlink to config files
-| ranger        | TUI file manager
-| kitty         | Terminal emulator
-| flatpak       | Installing apps
-| git           | Source control
-| neofetch      | To gloat
-| wget          | Network downloader
-| openssh       | Needed for ssh-keygen
-| tree          | Directory structure
-| man           | Manuals
-| man-pages     | Manual pages
-| xorg-xwayland | Xorg server
-| pavucontrol   | Audio manager
-| xdg-utils     | Default programs
-| wl-clipboard  | Wayland clipboard
-| libgccjit     | gcc
-| base-devel    | For buidling stuff
+| Package          | Reason for Install       |
+|------------------|--------------------------|
+| sway             | Wayland compositor       
+| swaybg           | Desktop background
+| swaylock         | Lock screen
+| swayidle         | Idle screen
+| mako             | Notification daemon
+| unzip            | File unzipper
+| ly               | TUI display manager
+| neovim           | Text editor
+| curl             | Transfer a URL
+| stow             | Symlink to config files
+| ranger           | TUI file manager
+| kitty            | Terminal emulator
+| flatpak          | Installing apps
+| git              | Source control
+| neofetch         | To gloat
+| wget             | Network downloader
+| openssh          | Needed for ssh-keygen
+| tree             | Directory structure
+| man              | Manuals
+| man-pages        | Manual pages
+| xorg-xwayland    | Xorg server
+| pavucontrol      | Audio manager
+| xdg-utils        | Default programs
+| wl-clipboard     | Wayland clipboard
+| libgccjit        | gcc
+| base-devel       | For buidling stuff
+| spotify-launcher | Spotify client
 
 - For `flatpak`, use `xdg-desktop-portal-wlr`
 
