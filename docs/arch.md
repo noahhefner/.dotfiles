@@ -23,7 +23,7 @@
 
 ### Packages
 
-`wdisplays libgccjit xdg-utils sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
+`libgccjit base-devel xdg-utils sway xorg-xwayland swaybg swaylock swayidle mako pavucontrol unzip ly neovim curl ranger kitty flatpak git neofetch wget openssh stow tree man man-pages`
 
 | Package       | Reason for Install       |
 |---------------|--------------------------|
@@ -51,8 +51,8 @@
 | pavucontrol   | Audio manager
 | xdg-utils     | Default programs
 | wl-clipboard  | Wayland clipboard
-| wdisplays     | GUI Display configurator
 | libgccjit     | gcc
+| base-devel    | For buidling stuff
 
 - For `flatpak`, use `xdg-desktop-portal-wlr`
 
