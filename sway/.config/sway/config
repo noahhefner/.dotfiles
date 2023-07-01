@@ -1,5 +1,9 @@
 # Sway configuration
 
+# Mouse settings
+# https://www.mankier.com/5/sway-input
+input 1133:49281:Logitech_Gaming_Mouse_G900 accel_profile flat
+
 # Set super key
 set $mod Mod4
 
@@ -28,14 +32,14 @@ floating_modifier $mod normal
 
 # Set terminal
 set $term kitty
+# Set launcher
+set $launcher yofi
 
 # Start terminal
 bindsym $mod+Return exec $term
 
-# Start Yofi application launcher
-#bindsym $mod+d exec bemenu
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
-bindsym $mod+d exec $menu
+# Start launcher
+bindsym $mod+d exec $launcher
 
 # Kill focused window
 bindsym $mod+q kill

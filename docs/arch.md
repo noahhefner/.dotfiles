@@ -56,6 +56,8 @@
 
 - For `flatpak`, use `xdg-desktop-portal-wlr`
 
+- To install `steam`, read [the wiki page](https://wiki.archlinux.org/title/steam).
+
 #### AUR
 
 - Use `yay` for AUR packages
