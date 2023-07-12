@@ -1,10 +1,8 @@
 # Disclaimer
 
-This repository is a constant work in progress. I was using Arch when I started this project, but I have since switched to NixOS and some of the configs may not work.
+This repository is a constant work in progress. Base system is Arch.
 
 # Overview
-
-TODO: Update for NixOS
 
 | Package       | Reason for Install       |
 |---------------|--------------------------|
@@ -50,8 +48,6 @@ stow waybar
 stow yofi
 sudo stow ly --target=/
 ```
-
-Note: `ly` and `yofi` doesn't work on NixOS.
 
 # Keybindings
 

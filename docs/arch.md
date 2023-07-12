@@ -7,13 +7,6 @@
 - [Download Arch](https://archlinux.org/download/), use the vt.edu download link
 - Boot into the iso
 
-### Format target drive
-
-- run `lsblk` to find the drive you want to install to
-- run `gdisk /sev/sdx` where is is the character of the drive you want
-- `x` to enter expert mode
-- `z` to erase the drive
-
 ### Run install sript
 
 - run `archinstall` to run arch install script 
@@ -55,8 +48,9 @@
 | base-devel       | For buidling stuff
 | spotify-launcher | Spotify client
 
-- For `flatpak`, use `xdg-desktop-portal-wlr`
+#### Notes on packages
 
+- For `flatpak`, use `xdg-desktop-portal-wlr`
 - To install `steam`, read [the wiki page](https://wiki.archlinux.org/title/steam).
 
 #### AUR
