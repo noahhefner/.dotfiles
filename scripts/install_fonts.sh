@@ -16,7 +16,7 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/JetBrainsMono.zip
     
     # Extract the font
-    unzip JetBrainsMono.zip -d {$DEST_DIR}
+    unzip JetBrainsMono.zip -d $DEST_DIR
     
     # Cleanup
     rm JetBrainsMono.zip
