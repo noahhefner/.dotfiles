@@ -6,7 +6,7 @@ builddir=$(pwd)
 # Install Vimix cursors
 # Note: Need to set cursors manually in Gnome Tweaks
 echo "Installing Vimix cursors."
-cd "/home/$username/Code" || exit
+cd "/home/$username/Source" || exit
 git clone https://github.com/vinceliuice/Vimix-cursors.git
 cd Vimix-cursors || exit
 ./install.sh
